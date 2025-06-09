@@ -1,0 +1,12 @@
+app_id: com.example.myapp
+icon:   Icon.png
+main:   ./app/main.go
+output: myapp
+
+platforms:
+  windows/amd64:
+    env:
+      - CGO_ENABLED=1
+  linux/amd64:
+    env:
+      - CGO_ENABLED=1
